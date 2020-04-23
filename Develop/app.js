@@ -21,7 +21,7 @@ function generateTeam() {
         "Manager",
         "Engineer",
         "Intern",
-        "Finished"
+        // "Finished"
       ]
     },
     {
@@ -39,11 +39,11 @@ function generateTeam() {
       name: "email",
       message: "What is the Employee's email address?"
     },
-    {
-        type: "confirm",
-        name: "moreEmployees",
-        message: "Would you like to add any more employees?"
-    }
+    // {
+    //     type: "confirm",
+    //     name: "moreEmployees",
+    //     message: "Would you like to add any more employees?"
+    // }
   ]).then((data) => {
     const { chooseRole } = data
     
@@ -133,7 +133,7 @@ function createIntern(employeeInfo) {
   },
 
   ]).then((data) => {
-    console.log(data)
+    // console.log(data)
 
     const { name, id, email } = employeeInfo
     const { school } = data
